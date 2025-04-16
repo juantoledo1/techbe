@@ -11,6 +11,22 @@
 
 body {
   font-family: "Retro Gaming", sans-serif;
+  cursor: none; /* Hide the default cursor */
+}
+
+/* Custom cursor using a radial gradient */
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 255, 0, 0.2) 0%, transparent 40%); /* Electric Green with transparency */
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease; /* Smooth transition */
 }
 
 @layer base {
@@ -120,4 +136,3 @@ body {
     padding: 0 10px;
   }
 }
-

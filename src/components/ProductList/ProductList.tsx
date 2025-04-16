@@ -222,7 +222,7 @@ export function ProductList() {
                   id="quantity"
                   value={quantity}
                   onChange={handleQuantityChange}
-                  className="col-span-3"
+                  className="col-span-3 neon-box" // Apply neon effect
                 />
               </div>
               <div className="grid grid-cols-4 items-center gap-4">
@@ -234,7 +234,7 @@ export function ProductList() {
                   id="contact"
                   value={contact}
                   onChange={handleContactChange}
-                  className="col-span-3"
+                  className="col-span-3 neon-box" // Apply neon effect
                 />
               </div>
             </div>
@@ -248,5 +248,3 @@ export function ProductList() {
     </section>
   );
 }
-
-

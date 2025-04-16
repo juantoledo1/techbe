@@ -1,6 +1,9 @@
+'use client';
+
 import type {Metadata} from 'next';
 import {Geist, Geist_Mono} from 'next/font/google';
 import './globals.css';
+import {Cursor} from '@/components/Cursor/Cursor';
 import {metadata} from './metadata';
 
 const geistSans = Geist({
@@ -13,6 +16,8 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
+export {metadata};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -22,18 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
-        <div className="cursor"></div>
-        <script dangerouslySetInnerHTML={{
-          __html: `
-            document.addEventListener('DOMContentLoaded', () => {
-              const cursor = document.querySelector('.cursor');
-              document.body.addEventListener('mousemove', (e) => {
-                cursor.style.top = e.pageY + 'px';
-                cursor.style.left = e.pageX + 'px';
-              });
-            });
-          `
-        }} />
+        <Cursor/>
       </body>
     </html>
   );

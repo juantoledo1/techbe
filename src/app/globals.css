@@ -51,15 +51,15 @@ body {
 @layer base {
   :root {
     --background: 0 0% 0%; /* Black */
-    --foreground: 120 100% 50%; /* Electric Green */
+    --foreground: 50 100% 50%; /* Electric Yellow */
     --card: 240 10% 3.9%; /* Slightly lighter black */
-    --card-foreground: 120 100% 50%; /* Electric Green */
+    --card-foreground: 50 100% 50%; /* Electric Yellow */
     --popover: 240 10% 3.9%; /* Slightly lighter black */
-    --popover-foreground: 120 100% 50%; /* Electric Green */
+    --popover-foreground: 50 100% 50%; /* Electric Yellow */
     --primary: 302 100% 65%; /* Bright Pink */
     --primary-foreground: 0 0% 10%; /* Near Black */
     --secondary: 240 5% 14.9%; /* Darker Grey */
-    --secondary-foreground: 120 100% 50%; /* Electric Green */
+    --secondary-foreground: 50 100% 50%; /* Electric Yellow */
     --muted: 240 4.8% 22.9%; /* Medium Grey */
     --muted-foreground: 0 0% 63.9%; /* Light Grey */
     --accent: 180 100% 70%; /* Neon Blue */
@@ -74,7 +74,7 @@ body {
     --sidebar-foreground: 0 0% 63.9%;
     --sidebar-primary: 180 100% 70%;
     --sidebar-primary-foreground: 0 0% 10%;
-    --sidebar-accent: 120 100% 50%;
+    --sidebar-accent: 50 100% 50%;
     --sidebar-accent-foreground: 0 0% 10%;
     --sidebar-border: 240 5.9% 10%;
     --sidebar-ring: 302 100% 65%;
@@ -82,15 +82,15 @@ body {
 
   .dark {
     --background: 0 0% 0%; /* Black */
-    --foreground: 120 100% 50%; /* Electric Green */
+    --foreground: 50 100% 50%; /* Electric Yellow */
     --card: 240 10% 3.9%; /* Slightly lighter black */
-    --card-foreground: 120 100% 50%; /* Electric Green */
+    --card-foreground: 50 100% 50%; /* Electric Yellow */
     --popover: 240 10% 3.9%; /* Slightly lighter black */
-    --popover-foreground: 120 100% 50%; /* Electric Green */
+    --popover-foreground: 50 100% 50%; /* Electric Yellow */
     --primary: 302 100% 65%; /* Bright Pink */
     --primary-foreground: 0 0% 10%; /* Near Black */
     --secondary: 240 5% 14.9%; /* Darker Grey */
-    --secondary-foreground: 120 100% 50%; /* Electric Green */
+    --secondary-foreground: 50 100% 50%; /* Electric Yellow */
     --muted: 240 4.8% 22.9%; /* Medium Grey */
     --muted-foreground: 0 0% 63.9%; /* Light Grey */
     --accent: 180 100% 70%; /* Neon Blue */
@@ -104,7 +104,7 @@ body {
     --sidebar-foreground: 0 0% 63.9%;
     --sidebar-primary: 180 100% 70%;
     --sidebar-primary-foreground: 0 0% 10%;
-    --sidebar-accent: 120 100% 50%;
+    --sidebar-accent: 50 100% 50%;
     --sidebar-accent-foreground: 0 0% 10%;
     --sidebar-border: 240 5.9% 10%;
     --sidebar-ring: 302 100% 65%;

@@ -22,6 +22,18 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
+        <div className="cursor"></div>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            document.addEventListener('DOMContentLoaded', () => {
+              const cursor = document.querySelector('.cursor');
+              document.body.addEventListener('mousemove', (e) => {
+                cursor.style.top = e.pageY + 'px';
+                cursor.style.left = e.pageX + 'px';
+              });
+            });
+          `
+        }} />
       </body>
     </html>
   );

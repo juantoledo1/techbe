@@ -226,7 +226,7 @@ export function ProductList() {
                 />
               </div>
               <div className="grid grid-cols-4 items-center gap-4">
-                <label htmlFor="contact" className="text-right">
+                <label htmlFor="contact" className="text-center">
                   Ingresa tu número
                 </label>
                 <Input

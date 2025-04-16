@@ -7,33 +7,37 @@ export function WhatWeDoSection() {
     // Main section container for "What We Do" with a bottom margin for spacing.
     <section id="what-we-do" className="mb-12">
       {/* Section title with bold font and a bottom margin for visual hierarchy. */}
-      <h2 className="text-2xl font-bold mb-4">What We Do</h2>
+      <h2 className="text-2xl font-bold mb-4">Nuestra Misión</h2>
       {/* Container with a neon effect for visual appeal. */}
-      <div className="neon-box">
+      <div className="neon-box mx-4">
         {/* Paragraph describing the company's mission. */}
-        <p>What We Do: Rediscovering the Past with Present Quality</p>
+        <p>Lo Que Hacemos: Redescubriendo el Pasado con Calidad Presente</p>
         {/* Paragraph detailing the company's passion for retro tech. */}
         <p>
-          At Betelgeuse Tech, we are passionate about rescuing the essence of
-          iconic retro products and putting them back within your reach. We
-          dedicate ourselves to the meticulous search and selection of high-quality
-          items with a nostalgic touch, ranging from electronic devices to accessories
-          that evoke past eras.
+          En Betelgeuse Tech, nos apasiona rescatar la esencia de
+          iconos retro y ponerlos nuevamente al alcance de tus manos. Nos
+          dedicamos a la búsqueda y selección minuciosa de artículos de alta
+          calidad con un toque nostálgico, abarcando desde dispositivos
+          electrónicos hasta accesorios que evocan épocas pasadas.
         </p>
         <p>
-          Our commitment goes beyond just selling. Our specialized team inspects and
-          verifies each product to ensure it meets our rigorous standards of quality
-          and functionality. We want each item that reaches your home not only to
-          transport you to another era but also to offer you the reliability and
-          performance you expect today.
+          Nuestro compromiso va más allá de la simple venta. Nuestro equipo
+          especializado se encarga de inspeccionar y verificar cada producto
+          para asegurar que cumpla con nuestros rigurosos estándares de
+          calidad y funcionamiento. Queremos que cada artículo que llegue a
+          tu hogar no solo te transporte a otra época, sino que también te
+          ofrezca la confiabilidad y el rendimiento que esperas en la
+          actualidad.
         </p>
         <p>
-          At Betelgeuse Tech, we strive to offer you a comfortable and secure
-          shopping experience, delivering these retro treasures directly to your
-          door. We believe in the value of history and the beauty of classic
-          design, and we work every day to share that passion with you.
+          En Betelgeuse Tech, nos esforzamos por ofrecerte una experiencia
+          de compra cómoda y segura, entregando estos tesoros retro
+          directamente en tu puerta. Creemos en el valor de la historia y
+          en la belleza del diseño clásico, y trabajamos cada día para
+          compartir esa pasión contigo.
         </p>
       </div>
     </section>
   );
 }
+

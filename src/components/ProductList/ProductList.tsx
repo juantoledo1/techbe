@@ -167,7 +167,7 @@ export function ProductList() {
                 height={200}
                 className="rounded-md mb-4"
               />
-              <div className="neon-box">
+              <div className="neon-box mx-4">
                 <CardDescription className="text-center">{product.description}</CardDescription>
               </div>
               <p className="text-lg font-semibold mt-2">Precio: ${product.price}</p>
@@ -232,3 +232,4 @@ export function ProductList() {
     </section>
   );
 }
+

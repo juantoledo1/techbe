@@ -10,23 +10,20 @@ export function AboutUsSection() {
     // Main section for "About Us" content
     <section id="about" className="mb-12">
       {/* Title of the section */}
-      <h2 className="text-2xl font-bold mb-4">About Us</h2>
+      <h2 className="text-2xl font-bold mb-4">Sobre Nosotros</h2>
       {/* Container for the company's story with neon styling */}
-      <div className="neon-box">
+      <div className="neon-box mx-4">
         {/* First paragraph: Introduction of Betelgeuse Tech */}
-        <p>Betelgeuse Tech: A Story of Effort and Technological Passion</p>
+        <p>Betelgeuse Tech: Una Historia de Esfuerzo y Pasión Tecnológica</p>
         {/* Second paragraph: Founding and mission of the company */}
-        <p>Founded in 2025 in the heart of Posadas, Misiones, Argentina, Betelgeuse Tech was born from the vision of bringing accessible and
-          quality technology to everyday life. With an initial investment resulting from much effort and dedication, this small local company set out to make its way in the competitive world of consumer electronics.</p>
+        <p>Fundada en 2025 en el corazón de Posadas, Misiones, Argentina, Betelgeuse Tech nació de la visión de llevar tecnología accesible y de calidad a la vida cotidiana. Con una inversión inicial fruto de mucho esfuerzo y dedicación, esta pequeña empresa local se propuso abrirse camino en el competitivo mundo de la electrónica de consumo.</p>
         {/* Third paragraph: Company's growth and values */}
-        <p>Since its humble beginnings, Betelgeuse Tech has grown steadily, driven by a passion for innovation and a commitment to its
-          customers. Although the company is still modest in size today, its entrepreneurial spirit and its focus on the future drive it to
-          continue to expand and offer products that facilitate and improve people's lives.</p>
+        <p>Desde sus humildes comienzos, Betelgeuse Tech ha crecido con paso firme, impulsada por la pasión por la innovación y el compromiso con sus clientes. Si bien hoy en día la empresa es aún modesta en tamaño, su espíritu emprendedor y la mirada puesta en el futuro la impulsan a seguir expandiéndose y ofreciendo productos que faciliten y mejoren la vida de las personas.</p>
         {/* Fourth paragraph: Company's roots and future vision */}
-        <p>With its roots firmly planted in the vibrant Misiones land, Betelgeuse Tech looks forward with the conviction that, with hard work and
-          a clear vision, the future holds great things.</p>
+        <p>Con raíces bien plantadas en la vibrante tierra misionera, Betelgeuse Tech mira hacia adelante con la convicción de que, con trabajo arduo y una visión clara, el futuro depara grandes cosas.</p>
       </div>
     </section>
   );
 }
+
 

@@ -29,33 +29,32 @@ export default function RootLayout({
         <div className="cursor"></div>
         <script dangerouslySetInnerHTML={{
           __html: `
-            const cursor = document.querySelector('.cursor');
+            document.addEventListener('DOMContentLoaded', () => {
+              const cursor = document.querySelector('.cursor');
 
-            document.addEventListener('mousemove', e => {
-              cursor.setAttribute("style", "top: "+(e.pageY - 20)+"px; left: "+(e.pageX - 20)+"px;")
-            });
-
-            document.addEventListener('click', () => {
-              cursor.classList.add("expand");
-
-              setTimeout(() => {
-                cursor.classList.remove("expand");
-              }, 500)
-            })
-
-            // Initialize cursor position only on client-side
-            if (typeof window !== 'undefined') {
-              document.addEventListener('DOMContentLoaded', () => {
-                document.dispatchEvent(new MouseEvent('mousemove', {
-                  clientX: window.innerWidth / 2,
-                  clientY: window.innerHeight / 2
-                }));
+              document.addEventListener('mousemove', e => {
+                cursor.setAttribute("style", "top: "+(e.pageY - 20)+"px; left: "+(e.pageX - 20)+"px;")
               });
-            }
+
+              document.addEventListener('click', () => {
+                cursor.classList.add("expand");
+
+                setTimeout(() => {
+                  cursor.classList.remove("expand");
+                }, 500)
+              });
+
+              // Initialize cursor position on load
+              document.dispatchEvent(new MouseEvent('mousemove', {
+                clientX: window.innerWidth / 2,
+                clientY: window.innerHeight / 2
+              }));
+            });
           `
         }} />
       </body>
     </html>
   );
 }
+
 

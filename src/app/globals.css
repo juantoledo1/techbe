@@ -35,7 +35,7 @@ body {
 @keyframes comet-tail {
   0% {
     opacity: 0.8;
-    transform: translateX(0) translateY(0) rotate(0deg);
+    transform: translateX(-50%) translateY(-50%) rotate(0deg); /* Corrected transform */
   }
   100% {
     opacity: 0;
@@ -148,3 +148,4 @@ body {
     padding: 0 10px;
   }
 }
+

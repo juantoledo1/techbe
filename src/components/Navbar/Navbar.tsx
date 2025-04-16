@@ -1,5 +1,9 @@
 "use client";
 
+/**
+ * Navbar component:
+ * Displays the main navigation bar with links to different sections of the page.
+ */
 export function Navbar() {
   return (
     // Main navigation bar container
@@ -22,4 +26,5 @@ export function Navbar() {
     </nav>
   );
 }
+
 

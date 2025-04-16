@@ -104,36 +104,52 @@ const products = [
   },
 ];
 
-// ProductList component definition
+/**
+ * ProductList component:
+ * Displays a list of products with details and an option to order.
+ */
 export function ProductList() {
   // State variables for managing the selected product, quantity, and contact information
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [quantity, setQuantity] = useState(1);
   const [contact, setContact] = useState('');
 
-  // Function to open the modal and set the selected product
+  /**
+   * Opens the order modal for a product.
+   * @param {object} product - The product to be ordered.
+   */
   const openModal = (product) => {
     setSelectedProduct(product);
   };
 
-  // Function to close the modal and reset the state
+  /**
+   * Closes the order modal and resets the state.
+   */
   const closeModal = () => {
     setSelectedProduct(null);
     setQuantity(1);
     setContact('');
   };
 
-  // Function to handle changes in the quantity input field
+  /**
+   * Handles changes in the quantity input field.
+   * @param {Event} event - The input change event.
+   */
   const handleQuantityChange = (event) => {
     setQuantity(parseInt(event.target.value, 10) || 1);
   };
 
-  // Function to handle changes in the contact input field
+  /**
+   * Handles changes in the contact input field.
+   * @param {Event} event - The input change event.
+   */
   const handleContactChange = (event) => {
     setContact(event.target.value);
   };
 
-  // Function to handle the form submission
+  /**
+   * Handles the form submission to send an order via WhatsApp.
+   */
   const handleSubmit = () => {
     // If no product is selected, exit the function
     if (!selectedProduct) return;
@@ -232,4 +248,5 @@ export function ProductList() {
     </section>
   );
 }
+
 

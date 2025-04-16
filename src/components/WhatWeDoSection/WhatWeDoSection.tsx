@@ -1,5 +1,9 @@
 'use client';
 
+/**
+ * WhatWeDoSection component:
+ * Displays the company's mission and values related to selling retro tech products.
+ */
 export function WhatWeDoSection() {
   // This component defines the "What We Do" section of the landing page.
   // It describes the company's mission and values regarding the sale of retro tech products.
@@ -40,4 +44,5 @@ export function WhatWeDoSection() {
     </section>
   );
 }
+
 

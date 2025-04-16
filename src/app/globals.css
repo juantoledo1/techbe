@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -83,6 +82,42 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+    /* Interactive background */
+    background: linear-gradient(to right, #000, #222);
+    animation: pulse 5s infinite alternate;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Center text */
+  h1, h2, h3, h4, h5, h6, p, a, li {
+    text-align: center;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Red highlight on hover */
+.hover-red-glow:hover {
+  color: white;
+  text-shadow:
+    0 0 5px #FF0000,
+    0 0 10px #FF0000,
+    0 0 20px #FF0000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
   }
 }
 

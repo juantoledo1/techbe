@@ -51,15 +51,15 @@ body {
 @layer base {
   :root {
     --background: 240 10% 3.9%; /* Slightly lighter black */
-    --foreground: 0 0% 98%; /* Slightly darker white */
+    --foreground: 180 70% 50%; /* Neon Blue */
     --card: 240 10% 3.9%; /* Slightly lighter black */
-    --card-foreground: 0 0% 98%; /* Slightly darker white */
+    --card-foreground: 180 70% 50%; /* Neon Blue */
     --popover: 240 10% 3.9%; /* Slightly lighter black */
-    --popover-foreground: 0 0% 98%; /* Slightly darker white */
-    --primary: 180 70% 50%; /* Neon Blue, reduced saturation */
+    --popover-foreground: 180 70% 50%; /* Neon Blue */
+    --primary: 180 70% 50%; /* Neon Blue */
     --primary-foreground: 0 0% 0%; /* Black */
     --secondary: 240 5% 14.9%; /* Darker Grey */
-    --secondary-foreground: 0 0% 98%; /* Slightly darker white */
+    --secondary-foreground: 180 70% 50%; /* Neon Blue */
     --muted: 240 4.8% 22.9%; /* Medium Grey */
     --muted-foreground: 0 0% 63.9%; /* Light Grey */
     --accent: 120 70% 50%; /* Electric Green, reduced saturation */
@@ -68,7 +68,7 @@ body {
     --destructive-foreground: 0 0% 98%; /* Slightly darker white */
     --border: 240 5.9% 10%; /* Slightly darker border */
     --input: 240 5.9% 10%; /* Slightly darker input */
-    --ring: 180 70% 50%; /* Neon Blue, reduced saturation */
+    --ring: 180 70% 50%; /* Neon Blue */
     --radius: 0.75rem;
     --sidebar-background: 240 5% 14.9%;
     --sidebar-foreground: 0 0% 63.9%;
@@ -82,15 +82,15 @@ body {
 
   .dark {
     --background: 240 10% 3.9%; /* Slightly lighter black */
-    --foreground: 0 0% 98%; /* Slightly darker white */
+    --foreground: 180 70% 50%; /* Neon Blue */
     --card: 240 10% 3.9%; /* Slightly lighter black */
-    --card-foreground: 0 0% 98%; /* Slightly darker white */
+    --card-foreground: 180 70% 50%; /* Neon Blue */
     --popover: 240 10% 3.9%; /* Slightly lighter black */
-    --popover-foreground: 0 0% 98%; /* Slightly darker white */
-    --primary: 180 70% 50%; /* Neon Blue, reduced saturation */
+    --popover-foreground: 180 70% 50%; /* Neon Blue */
+    --primary: 180 70% 50%; /* Neon Blue */
     --primary-foreground: 0 0% 0%; /* Black */
     --secondary: 240 5% 14.9%; /* Darker Grey */
-    --secondary-foreground: 0 0% 98%; /* Slightly darker white */
+    --secondary-foreground: 180 70% 50%; /* Neon Blue */
     --muted: 240 4.8% 22.9%; /* Medium Grey */
     --muted-foreground: 0 0% 63.9%; /* Light Grey */
     --accent: 120 70% 50%; /* Electric Green, reduced saturation */
@@ -99,7 +99,7 @@ body {
     --destructive-foreground: 0 0% 98%; /* Slightly darker white */
     --border: 240 5.9% 10%; /* Slightly darker border */
     --input: 240 5.9% 10%; /* Slightly darker input */
-    --ring: 180 70% 50%; /* Neon Blue, reduced saturation */
+    --ring: 180 70% 50%; /* Neon Blue */
     --sidebar-background: 240 5% 14.9%;
     --sidebar-foreground: 0 0% 63.9%;
     --sidebar-primary: 180 70% 50%;
@@ -192,5 +192,3 @@ body {
     height: 50px;
   }
 }
-
-

@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,6 +14,7 @@ body {
   font-family: "Retro Gaming", sans-serif;
   cursor: none; /* Hide the default cursor */
   text-align: center; /* Center text */
+  font-size: 1.2rem; /* Adjust base font size */
 }
 
 /* Star-shaped cursor with red glow and comet-like trail */
@@ -28,6 +30,9 @@ body {
   z-index: 10000;
   transform: translate(-50%, -50%);
   animation: comet-tail 1s ease-out forwards;
+  /* Ensure the cursor is visible */
+  opacity: 1;
+  visibility: visible;
 }
 
 /* Comet tail animation */
@@ -148,5 +153,16 @@ body {
   .container {
     padding: 0 10px;
   }
+  body {
+    font-size: 1rem; /* Adjust smaller font size for mobile */
+  }
 }
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  body {
+    font-size: 1.1rem; /* Adjust medium font size for tablets */
+  }
+}
+/* Corrected cursor styling: Ensure it's visible */
+
 

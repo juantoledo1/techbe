@@ -51,18 +51,18 @@ body {
 @layer base {
   :root {
     --background: 0 0% 0%; /* Black */
-    --foreground: 180 100% 70%; /* Neon Blue */
+    --foreground: 120 100% 50%; /* Electric Green */
     --card: 240 10% 3.9%; /* Slightly lighter black */
-    --card-foreground: 180 100% 70%; /* Neon Blue */
+    --card-foreground: 120 100% 50%; /* Electric Green */
     --popover: 240 10% 3.9%; /* Slightly lighter black */
-    --popover-foreground: 180 100% 70%; /* Neon Blue */
+    --popover-foreground: 120 100% 50%; /* Electric Green */
     --primary: 302 100% 65%; /* Bright Pink */
     --primary-foreground: 0 0% 10%; /* Near Black */
     --secondary: 240 5% 14.9%; /* Darker Grey */
-    --secondary-foreground: 180 100% 70%; /* Neon Blue */
+    --secondary-foreground: 120 100% 50%; /* Electric Green */
     --muted: 240 4.8% 22.9%; /* Medium Grey */
     --muted-foreground: 0 0% 63.9%; /* Light Grey */
-    --accent: 120 100% 50%; /* Electric Green */
+    --accent: 180 100% 70%; /* Neon Blue */
     --accent-foreground: 0 0% 10%; /* Near Black */
     --destructive: 0 84.2% 60.2%; /* Red */
     --destructive-foreground: 0 0% 98%; /* Slightly darker white */
@@ -82,18 +82,18 @@ body {
 
   .dark {
     --background: 0 0% 0%; /* Black */
-    --foreground: 180 100% 70%; /* Neon Blue */
+    --foreground: 120 100% 50%; /* Electric Green */
     --card: 240 10% 3.9%; /* Slightly lighter black */
-    --card-foreground: 180 100% 70%; /* Neon Blue */
+    --card-foreground: 120 100% 50%; /* Electric Green */
     --popover: 240 10% 3.9%; /* Slightly lighter black */
-    --popover-foreground: 180 100% 70%; /* Neon Blue */
+    --popover-foreground: 120 100% 50%; /* Electric Green */
     --primary: 302 100% 65%; /* Bright Pink */
     --primary-foreground: 0 0% 10%; /* Near Black */
     --secondary: 240 5% 14.9%; /* Darker Grey */
-    --secondary-foreground: 180 100% 70%; /* Neon Blue */
+    --secondary-foreground: 120 100% 50%; /* Electric Green */
     --muted: 240 4.8% 22.9%; /* Medium Grey */
     --muted-foreground: 0 0% 63.9%; /* Light Grey */
-    --accent: 120 100% 50%; /* Electric Green */
+    --accent: 180 100% 70%; /* Neon Blue */
     --accent-foreground: 0 0% 10%; /* Near Black */
     --destructive: 0 84.2% 60.2%; /* Red */
     --destructive-foreground: 0 0% 98%; /* Slightly darker white */

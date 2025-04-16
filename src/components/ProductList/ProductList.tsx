@@ -1,16 +1,18 @@
 'use client';
 
+// Import necessary modules and components
 import Image from 'next/image';
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from '@/components/ui/card';
 import {Button} from '@/components/ui/button';
 import {useState} from 'react';
+// Import dialog components from Radix UI
 import {
   Dialog,
   DialogContent,
   DialogDescription,
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
+  DialogTrigger
 } from "@/components/ui/dialog"
 import {Input} from "@/components/ui/input";
 import {Textarea} from "@/components/ui/textarea";
@@ -102,40 +104,53 @@ const products = [
   },
 ];
 
+// ProductList component definition
 export function ProductList() {
+  // State variables for managing the selected product, quantity, and contact information
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [quantity, setQuantity] = useState(1);
   const [contact, setContact] = useState('');
 
+  // Function to open the modal and set the selected product
   const openModal = (product) => {
     setSelectedProduct(product);
   };
 
+  // Function to close the modal and reset the state
   const closeModal = () => {
     setSelectedProduct(null);
     setQuantity(1);
     setContact('');
   };
 
+  // Function to handle changes in the quantity input field
   const handleQuantityChange = (event) => {
     setQuantity(parseInt(event.target.value, 10) || 1);
   };
 
+  // Function to handle changes in the contact input field
   const handleContactChange = (event) => {
     setContact(event.target.value);
   };
 
+  // Function to handle the form submission
   const handleSubmit = () => {
+    // If no product is selected, exit the function
     if (!selectedProduct) return;
-
+  
+    // Construct the WhatsApp message
     const whatsappMessage = `Quisiera ordenar ${quantity} de ${selectedProduct.name}. Mi número de contacto es ${contact}.`;
+    // Create the WhatsApp URL with the message
     const whatsappURL = `https://wa.me/3764674458?text=${encodeURIComponent(whatsappMessage)}`;
 
+    // Open the WhatsApp URL in a new tab
     window.open(whatsappURL, '_blank');
+    // Close the modal
     closeModal();
   };
 
   return (
+    // Main section for displaying products
     <section id="products" className="mb-12">
       <h2 className="text-2xl font-bold mb-4">Productos</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -162,12 +177,14 @@ export function ProductList() {
         ))}
       </div>
 
-      {/* Product Modal */}
+      {/* Product Detail Modal */}
       <Dialog open={!!selectedProduct}
               onOpenChange={(open) => {
                 if (!open) closeModal()
               }}>
+              {/* Button to trigger the modal, only works when there is not a product selected */}
         <DialogTrigger asChild>
+           
           <Button>Open</Button>
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px]">
@@ -177,6 +194,7 @@ export function ProductList() {
               Ingrese la cantidad y su información de contacto para realizar su pedido.
             </DialogDescription>
           </DialogHeader>
+          {/* Form to request product quantity and contact information */}
           {selectedProduct && (
             <div className="grid gap-4 py-4">
               <div className="grid grid-cols-4 items-center gap-4">
@@ -205,6 +223,7 @@ export function ProductList() {
               </div>
             </div>
           )}
+          {/* Button to submit the order via WhatsApp */}
           <Button onClick={handleSubmit}>
             Realizar Pedido vía WhatsApp
           </Button>

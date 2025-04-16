@@ -1,9 +1,11 @@
-import {ArrowRight, Check, ChevronsUpDown, Circle, Copy, Edit, ExternalLink, File, HelpCircle, Home, Loader2, Mail, MessageSquare, Moon, Plus, PlusCircle, Search, Server, Settings, Share2, Shield, Sun, Trash, User, X, Workflow} from 'lucide-react';
+import { ArrowRight, Check, ChevronsUpDown, Circle, Copy, Edit, ExternalLink, File, HelpCircle, Home, Loader2, Mail, MessageSquare, Moon, Plus, PlusCircle, Search, Server, Settings, Share2, Shield, Sun, Trash, User, X, Workflow } from 'lucide-react';
 
+// Define an object containing various icons imported from the 'lucide-react' library.
 const Icons = {
+  // Mapping icon names to their corresponding components.
   arrowRight: ArrowRight,
   check: Check,
-  chevronDown: ChevronsUpDown,
+  chevronDown: ChevronsUpDown, // Icon for a dropdown or expansion indicator.
   circle: Circle,
   workflow: Workflow,
   close: X,
@@ -30,4 +32,5 @@ const Icons = {
   user: User,
 };
 
-export {Icons};
+// Export the Icons object for use in other parts of the application.
+export { Icons };

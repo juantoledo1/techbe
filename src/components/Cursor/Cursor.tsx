@@ -33,6 +33,15 @@ export function Cursor() {
       style={{
         top: `${position.y}px`,
         left: `${position.x}px`,
+        backgroundColor: 'red',
+        opacity: isActive ? 1 : 0.8,
+        width: '20px',
+        height: '20px',
+        borderRadius: '50%',
+        position: 'fixed',
+        pointerEvents: 'none',
+        zIndex: 10000,
+        transform: 'translate(-50%, -50%)',
       }}
     />
   );

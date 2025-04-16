@@ -42,9 +42,20 @@ export default function RootLayout({
                 cursor.classList.remove("expand");
               }, 500)
             })
+
+            // Initialize cursor position only on client-side
+            if (typeof window !== 'undefined') {
+              document.addEventListener('DOMContentLoaded', () => {
+                document.dispatchEvent(new MouseEvent('mousemove', {
+                  clientX: window.innerWidth / 2,
+                  clientY: window.innerHeight / 2
+                }));
+              });
+            }
           `
         }} />
       </body>
     </html>
   );
 }
+

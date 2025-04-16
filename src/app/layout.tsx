@@ -3,8 +3,10 @@
 import type {Metadata} from 'next';
 import {Geist, Geist_Mono} from 'next/font/google';
 import './globals.css';
+import {useEffect, useState} from 'react';
 import {Cursor} from '@/components/Cursor/Cursor';
-import {useEffect} from 'react';
+import {Navbar} from '@/components/Navbar/Navbar';
+import {Footer} from '@/components/Footer/Footer';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -20,17 +22,20 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>): JSX.Element {
   useEffect(() => {
     // Empty useEffect to ensure it's treated as a client component
   }, []);
 
   return (
-    <html lang="en">
+    <html lang="es">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <Navbar/>
         {children}
         <Cursor/>
+        <Footer/>
       </body>
     </html>
   );
 }
+

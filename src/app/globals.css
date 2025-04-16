@@ -51,15 +51,15 @@ body {
 @layer base {
   :root {
     --background: 0 0% 0%; /* Black */
-    --foreground: 50 100% 50%; /* Electric Yellow */
+    --foreground: 39 100% 50%; /* Neon Orange */
     --card: 240 10% 3.9%; /* Slightly lighter black */
-    --card-foreground: 50 100% 50%; /* Electric Yellow */
+    --card-foreground: 39 100% 50%; /* Neon Orange */
     --popover: 240 10% 3.9%; /* Slightly lighter black */
-    --popover-foreground: 50 100% 50%; /* Electric Yellow */
+    --popover-foreground: 39 100% 50%; /* Neon Orange */
     --primary: 302 100% 65%; /* Bright Pink */
     --primary-foreground: 0 0% 10%; /* Near Black */
     --secondary: 240 5% 14.9%; /* Darker Grey */
-    --secondary-foreground: 50 100% 50%; /* Electric Yellow */
+    --secondary-foreground: 39 100% 50%; /* Neon Orange */
     --muted: 240 4.8% 22.9%; /* Medium Grey */
     --muted-foreground: 0 0% 63.9%; /* Light Grey */
     --accent: 180 100% 70%; /* Neon Blue */
@@ -74,7 +74,7 @@ body {
     --sidebar-foreground: 0 0% 63.9%;
     --sidebar-primary: 180 100% 70%;
     --sidebar-primary-foreground: 0 0% 10%;
-    --sidebar-accent: 50 100% 50%;
+    --sidebar-accent: 39 100% 50%;
     --sidebar-accent-foreground: 0 0% 10%;
     --sidebar-border: 240 5.9% 10%;
     --sidebar-ring: 302 100% 65%;
@@ -82,15 +82,15 @@ body {
 
   .dark {
     --background: 0 0% 0%; /* Black */
-    --foreground: 50 100% 50%; /* Electric Yellow */
+    --foreground: 39 100% 50%; /* Neon Orange */
     --card: 240 10% 3.9%; /* Slightly lighter black */
-    --card-foreground: 50 100% 50%; /* Electric Yellow */
+    --card-foreground: 39 100% 50%; /* Neon Orange */
     --popover: 240 10% 3.9%; /* Slightly lighter black */
-    --popover-foreground: 50 100% 50%; /* Electric Yellow */
+    --popover-foreground: 39 100% 50%; /* Neon Orange */
     --primary: 302 100% 65%; /* Bright Pink */
     --primary-foreground: 0 0% 10%; /* Near Black */
     --secondary: 240 5% 14.9%; /* Darker Grey */
-    --secondary-foreground: 50 100% 50%; /* Electric Yellow */
+    --secondary-foreground: 39 100% 50%; /* Neon Orange */
     --muted: 240 4.8% 22.9%; /* Medium Grey */
     --muted-foreground: 0 0% 63.9%; /* Light Grey */
     --accent: 180 100% 70%; /* Neon Blue */
@@ -104,7 +104,7 @@ body {
     --sidebar-foreground: 0 0% 63.9%;
     --sidebar-primary: 180 100% 70%;
     --sidebar-primary-foreground: 0 0% 10%;
-    --sidebar-accent: 50 100% 50%;
+    --sidebar-accent: 39 100% 50%;
     --sidebar-accent-foreground: 0 0% 10%;
     --sidebar-border: 240 5.9% 10%;
     --sidebar-ring: 302 100% 65%;
@@ -207,4 +207,11 @@ body {
     width: 50px;
     height: 50px;
   }
+}
+
+.neon-box {
+  padding: 10px;
+  border: 2px solid hsl(var(--accent)); /* Neon blue border */
+  border-radius: 5px;
+  box-shadow: 0 0 5px hsl(var(--accent)), 0 0 10px hsl(var(--accent)); /* Neon glow effect */
 }

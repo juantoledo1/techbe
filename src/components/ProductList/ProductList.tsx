@@ -152,7 +152,9 @@ export function ProductList() {
                 height={200}
                 className="rounded-md mb-4"
               />
-              <CardDescription className="text-center">{product.description}</CardDescription>
+              <div className="neon-box">
+                <CardDescription className="text-center">{product.description}</CardDescription>
+              </div>
               <p className="text-lg font-semibold mt-2">Precio: ${product.price}</p>
               <Button onClick={() => openModal(product)}>Ordenar Ahora</Button>
             </CardContent>

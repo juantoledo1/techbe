@@ -8,15 +8,15 @@ export function Navbar() {
       <ul className="flex space-x-4 justify-center">
         {/* Navigation link to the 'About Us' section */}
         <li>
-          <a href="#about" className="hover:text-accent">About Us</a>
+          <a href="#about" className="hover:text-accent">Sobre Nosotros</a>
         </li>
         {/* Navigation link to the 'Products' section */}
         <li>
-          <a href="#products" className="hover:text-accent">Products</a>
+          <a href="#products" className="hover:text-accent">Productos</a>
         </li>
         {/* Navigation link to the 'What We Do' section */}
         <li>
-          <a href="#what-we-do" className="hover:text-accent">What We Do</a>
+          <a href="#what-we-do" className="hover:text-accent">Nuestra Misión</a>
         </li>
       </ul>
     </nav>

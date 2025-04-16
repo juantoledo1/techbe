@@ -29,7 +29,6 @@ body {
   pointer-events: none;
   z-index: 10000;
   transform: translate(-50%, -50%);
-  animation: comet-tail 1s ease-out forwards;
   /* Ensure the cursor is visible */
   opacity: 1;
   visibility: visible;
@@ -164,5 +163,33 @@ body {
   }
 }
 /* Corrected cursor styling: Ensure it's visible */
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, rgba(255, 0, 0, 0.8) 10%, transparent 80%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+  /* Ensure the cursor is visible */
+  opacity: 1;
+  visibility: visible;
+}
 
+/* Comet tail animation */
+@keyframes comet-tail {
+  0% {
+    opacity: 1;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+  }
+}
 
